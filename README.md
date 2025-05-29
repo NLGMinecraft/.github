@@ -10,7 +10,7 @@ Leuk dat je interesse hebt in developen bij NLG! :computer: Hier krijg je een ko
 
 Veel plezier! :muscle:
 
-– Rebecca // Ragbecca
+- Rebecca // Ragbecca
 - Marten // Marten_mrfcyt
 
 _En onthoud: fouten maken hoort erbij!_ :sunglasses:
