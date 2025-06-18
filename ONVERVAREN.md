@@ -155,3 +155,112 @@ Let op: deze is niet aanpasbaar!
 - Maak een lijst (zelfde thema als opdracht 1)
 - Print eerste en laatste waarde van de lijst
 - Maak de lijst leeg, print de lengte (moet 0 zijn)
+
+---
+
+## :rocket: Opdracht 3 (niet verplicht)
+
+Je leert nu extra over datatypes, variabelen en aanpassingen van datatypes
+
+### :one: Nummer DataType
+
+Een int kan alle verschillende getallen tussen -2.147.483.648 en 2.147.483.647 dit is een 32-bit getal
+Een long kan meer, deze is namelijk 64-bit. (Dus een maximaal getal in een quintiljoen)
+Een short is 16-bit
+Een byte is 8-bit
+
+### :two: Komma-getal DataType
+:negative_squared_cross_mark: Een komma-getal kan niet opgeslagen worden in een int maar wel in een float (32-bit) en een double (64-bit)
+
+### :three: Extra DataTypes
+- char ('c' een enkele letter of andere teken)
+- boolean (true of false, is er om te kijken of iets waar of niet waar is)
+
+#### :question: Wist je dat?
+Een String niks anders is dan een char-array?
+
+---
+### :exclamation: Voorbeeld
+
+```java
+byte ditIsEenByte = 1;
+short ditIsEenShort = 128;
+int ditIsEenInt = 32768;
+long ditIsEenLong = 32768L;
+float ditIsEenFloat = 12.2F;
+double ditIsEenDouble = 12.2;
+char ditIsEenChar = 'x';
+boolean ditIsEenBoolean = false;
+```
+
+#### :question: Zie je?
+Dat long en floats een suffix hebben? Die moeten namelijk een L (of l) en F (of f) aan het einde hebben, want anders worden ze geregisteerd als int (alleen als het kort genoeg is) of double
+
+### :rocket: Van 1 DataType naar de ander
+Datatypes kunnen naar andere datatypes veranderd worden, van kleiner naar groter kan altijd! Maar van groter naar kleiner moet gecast worden! Want misschien past het er niet in!
+> Wat is casten? Casten is zeggen teggen iets: het is nu A maar het moet eigenlijk B zijn. Als dit niet lukt krijg je een waarschuwing of error 'Cannot cast 'B' to 'A''
+```java
+short byteNaarShort = ditIsEenByte;
+int shortNaarInt = ditIsEenShort;
+long intNaarLong = ditIsEenInt;
+double floatNaarDouble = ditIsEenFloat;
+```
+
+Nu met casting
+```java
+long kleineLong = 1L;
+int longNaarInt = (int) kleineLong;
+short intNaarShort = (short) longNaarInt;
+byte shortNaarByte = (byte) intNaarShort;
+
+double kleineDouble = 12.2;
+float doubleNaarFloat = (float) kleineDouble;
+
+int kleineInt = 120;
+char intNaarChar = (char) kleineInt; // Wordt een 'x'
+```
+> Om te zien welke chars welke int-waardes hebben bekijk: [ASCII](https://www.w3schools.com/charsets/ref_html_ascii.asp)
+
+### :postbox: Variabele aanmaken
+> 'type' 'variabeleNaam' = 'waarde';
+> Een type is bvb een String of een int
+
+#### :exclamation: Een variabele-naam verzinnen
+Er zijn veel opties om een naam te verzinnen. [Hier kan je de regels vinden](https://www.w3schools.com/java/java_variables_identifiers.asp)
+> Normale regels voor het maken variabelen kan je vinden op de website van Oracle (Makers van Java) [Klik hier](https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html)
+
+### :sponge: Aanpassen van een datatype variabele
+Het is mogelijk om een datatype variabele aan te passen. Je hebt de opties:
+- `+` (of +=) plus
+- `-` (of -=) min
+- `*` (of *=) keer
+- `/` (of /=) gedeeld door
+- `%` (of %=) modulus, wat er overblijft als je / doet
+
+```java
+int voorbeeldInt = 10;
+voorbeeldInt = voorbeeldInt + 10; // 20
+voorbeeldInt += 10; // 30
+voorbeeldInt = voorbeeldInt - 5; // 25
+voorbeeldInt -= 5; // 20
+voorbeeldInt = voorbeeldInt * 2; // 40
+voorbeeldInt *= 2; // 80
+voorbeeldInt = voorbeeldInt / 2; // 40
+voorbeeldInt /= 2; // 20
+```
+
+---
+
+### :sparkles: Opdracht 3 Taken:
+
+- Maak een `long`
+- Maak een `float`
+- Maak een `int array`
+- Maak een `Integer List`
+- Voor alle 4 de aangemaakte variabelen doe dit:
+    - Maak het getal groter
+    - Maak het getal kleiner
+    - Deel het getal door 2 (Zonder het datatype te veranderen)
+    - Keer het getal met 4
+    - Verkrijg de modulus van 3
+    - Print elke waarde elke keer uit
