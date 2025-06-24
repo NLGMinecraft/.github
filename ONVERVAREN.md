@@ -264,3 +264,76 @@ voorbeeldInt /= 2; // 20
     - Keer het getal met 4
     - Verkrijg de modulus van 3
     - Print elke waarde elke keer uit
+ 
+---
+
+## :rocket: Opdracht 4 (niet verplicht)
+
+Je leert nu wat meer over booleans en if-statements
+
+**Wat is een boolean?**
+> Een ja of nee antwoord
+
+### :sponge: Wat kan je met een boolean?
+Een vraag beantwoorden! Doormiddel van een `vergelijking`!
+
+### :exclamation: vergelijking
+Een vergelijking kan je op verschillende manieren creëren
+```java
+boolean b1 = 5 > 6; // false, 5 is niet groter dan 6
+boolean b2 = 5 < 6; // true, 5 is kleiner dan 6
+boolean b3 = 6 == 6; // true, 6 is hetzelfde als 6
+boolean b4 = 5 != 6; // true, 5 is niet hetzelfde als 6 en dat is gevraagd
+```
+
+### :question: Waarvoor gebruik je een boolean?
+Een boolean gebruik je dus om iets te vergelijken! Maar om dat echt te gebruiken heb je meerdere opties, 2 leren we je nu:
+- if-statements
+> Is iets waar, doe dit
+- ternary operators
+> Is iets waar, geef dit anders de andere optie
+
+**Hoe ziet dat er dan uit?**
+If-statement
+```java
+int i = 0;
+int j = 1;
+if (i > j) {
+// Komt hier nooit in want i is niet groter dan j
+}
+```
+
+Uitgebreide if-statement :fire:
+```java
+int i = 0;
+int j = 1;
+if (i > j) {
+// Komt hier nooit in want i is niet groter dan j
+} else if (i == j) {
+// Komt hier nooit in want i is niet hetzelfde als j
+} else {
+// Komt hier wel in, omdat dit de prullenbak is die alles pakt wat nog overblijft!
+}
+```
+> If is dus een waar of nietwaar vraag die een boolean vraagt
+> Else-if is een extra optie na de if, waarbij iets nieuws wordt vergeleken maar als de if al waar is, wordt dit **nooit** vergeleken
+> Else is de prullenbak, hier komt alles in wat niet door de voorgaande (else-)if's komt
+
+Ternary operator :grey_question:
+```java
+String value = 6 > 5 ? "Waar" : "Niet Waar"; // Wordt "Waar" want 6 is groter dan 5
+```
+> Wordt gebruikt als er een a of b optie gegeven moet worden door een boolean-vergelijking
+> Opmaak: <vergelijking> ? <alsTrue> : <alsFalse>;
+
+---
+
+### :sparkles: Opdracht 4 Taken:
+
+- Maak een `if-statement` die:
+    - Kijkt of 2 waardes gelijk zijn, en dan 1 print
+    - Kijkt of 1 van de 2 waardes groter is, en dan 2 print
+    - Resterend, en dan 3 print
+- Maak 2 `Strings`
+    - Vergelijk de 2 Strings in een ternary-operator
+    - Print de waarde die je hebt verzonnen voor true (of false, hangt van je 2 Strings af)
